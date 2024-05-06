@@ -25,7 +25,7 @@ async def register_new_user(data: UserRegistrationValidator):
     new_user_data = data.model_dump()
 
     regex = re.match(r'^(\+998|998)\d{9}$', new_user_data.phone_number)
-
+    # sdfasdf
     if regex:
         return True
     else:
